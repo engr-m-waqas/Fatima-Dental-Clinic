@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fatima-dental-clinic
+    env: static
+    staticPublishPath: .
+    buildCommand: ""
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
